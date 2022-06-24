@@ -1,0 +1,249 @@
+* {
+	font-family: 'Joan', serif;
+}
+
+//STYLE OF MENU
+body {
+  font-family: ;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+//STYLE OF TEXTs
+.text{
+	
+	position: relative;
+	font-family: monospace;
+	color: red;
+	filter: contraste(15);
+}
+.frase{
+	position: absolute;
+	color: red;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: switch 6s infinite ease-in-out;
+	min-width: 100%;
+	margin-top: 0.5em;
+	text-align: center;
+	
+	text-shadow: 2px 2px 5px blue;
+}
+
+.frase:nth-child(1){
+	animation-delay: -7s; 
+}
+.frase:nth-child(2){
+	animation-delay: -6s; 
+}
+.frase:nth-child(3){
+	animation-delay: -5s; 
+}
+
+@keyframes switch {
+	0%,
+	5%,
+	100% {
+		filter: blur(0px);
+		opacity: 1;
+	}
+				
+	50%,
+	80%{
+		filter: blur(180px);
+		opacity: 0;
+	}
+}
+
+//STYLE OF FRASES
+.slideshow-container1 {
+
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+//STYLE OF IMAGEs
+.mySlides {display: none}
+main{
+	padding-top: 2.7em;
+}
+img {
+	vertical-align: middle;
+	height: 80%;	
+}
+#log{
+	height: 20%;
+	position: fixed;
+	top: 0;
+	right: 7em;
+}
+
+/* Slideshow container */
+.slideshow-container2 {
+
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Number text (1/6 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #B0C4DE;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next {font-size: 11px}
+}
+
+//STYLE OF VIDEO
+.slideshow-container3 {
+
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.video{
+	margin-left: 4em;
+}
+#video2, #video3, #video4{display:none;}
+
+.dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+#prevV2, #nextV2, 
+#prevV3, #nextV3, 
+#prevV4, #nextV4{ display: none;}
+
+.prev2, .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover, .next2:hover {
+  background-color: white;
+}
+
+.slideshow-container2, .slideshow-container3{display: none;}
